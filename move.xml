@@ -2,7 +2,7 @@
   <block type="controls_if" id="268" inline="false" x="0" y="-52">
     <statement name="DO0">
       <block type="comment_comment" id="281">
-        <field name="TEXT">88</field>
+        <field name="TEXT">268</field>
       </block>
     </statement>
     <next>
