@@ -1,1 +1,11 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defreturn" id="25" inline="false" x="196" y="7">
+    <mutation></mutation>
+    <field name="NAME">functionName</field>
+    <statement name="STACK">
+      <block type="comment_comment" id="36">
+        <field name="TEXT">move</field>
+      </block>
+    </statement>
+  </block>
+</xml>
