@@ -3,8 +3,12 @@
     <mutation></mutation>
     <field name="NAME">functionName</field>
     <statement name="STACK">
-      <block type="comment_comment" id="36">
-        <field name="TEXT">move</field>
+      <block type="expansion_gripper" id="45" inline="true">
+        <next>
+          <block type="comment_comment" id="36">
+            <field name="TEXT">move</field>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
