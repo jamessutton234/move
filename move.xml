@@ -1,21 +1,46 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="procedures_defreturn" id="25" inline="false" x="217" y="88">
+  <block type="procedures_defreturn" id="25" inline="false" x="235" y="76">
     <mutation></mutation>
     <field name="NAME">functionName</field>
     <statement name="STACK">
-      <block type="led_select" id="101" inline="true">
-        <field name="ACTION">FLASH</field>
-        <value name="LED">
-          <block type="math_number" id="130">
-            <field name="NUM">20</field>
+      <block type="robot_delay" id="177" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="224">
+            <field name="NUM">21</field>
           </block>
         </value>
+        <next>
+          <block type="led_select" id="101" inline="true">
+            <field name="ACTION">FLASH</field>
+            <value name="LED">
+              <block type="math_number" id="130">
+                <field name="NUM">20</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_rightmotor" id="140" inline="true">
+                <value name="MOVRIGHT">
+                  <block type="math_number" id="200">
+                    <field name="NUM">200</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_leftmotor" id="158" inline="true">
+                    <value name="MOVLEFT">
+                      <block type="math_number" id="231">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
     </statement>
     <value name="RETURN">
-      <block type="sensor_button" id="70">
-        <field name="OBJECT">ENTER</field>
-      </block>
+      <block type="sensor_battery" id="175"></block>
     </value>
   </block>
 </xml>
