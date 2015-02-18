@@ -1,22 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="procedures_defreturn" id="25" inline="false" x="186" y="99">
+  <block type="procedures_defreturn" id="25" inline="false" x="217" y="88">
     <mutation></mutation>
     <field name="NAME">functionName</field>
     <statement name="STACK">
-      <block type="expansion_gripper" id="45" inline="true">
-        <next>
-          <block type="comment_comment" id="36">
-            <field name="TEXT">move</field>
-            <next>
-              <block type="movement_reverse" id="62"></block>
-            </next>
+      <block type="led_select" id="101" inline="true">
+        <field name="ACTION">FLASH</field>
+        <value name="LED">
+          <block type="math_number" id="130">
+            <field name="NUM">20</field>
           </block>
-        </next>
+        </value>
       </block>
     </statement>
     <value name="RETURN">
       <block type="sensor_button" id="70">
-        <field name="OBJECT">UP</field>
+        <field name="OBJECT">ENTER</field>
       </block>
     </value>
   </block>
