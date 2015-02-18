@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="procedures_defreturn" id="25" inline="false" x="196" y="7">
+  <block type="procedures_defreturn" id="25" inline="false" x="186" y="99">
     <mutation></mutation>
     <field name="NAME">functionName</field>
     <statement name="STACK">
@@ -7,9 +7,17 @@
         <next>
           <block type="comment_comment" id="36">
             <field name="TEXT">move</field>
+            <next>
+              <block type="movement_reverse" id="62"></block>
+            </next>
           </block>
         </next>
       </block>
     </statement>
+    <value name="RETURN">
+      <block type="sensor_button" id="70">
+        <field name="OBJECT">UP</field>
+      </block>
+    </value>
   </block>
 </xml>
