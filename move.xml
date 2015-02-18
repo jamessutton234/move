@@ -1,49 +1,17 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="procedures_defreturn" id="25" inline="false" x="235" y="76">
-    <mutation></mutation>
-    <field name="NAME">functionName</field>
-    <statement name="STACK">
-      <block type="robot_delay" id="177" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="224">
-            <field name="NUM">21</field>
-          </block>
-        </value>
-        <next>
-          <block type="led_select" id="101" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="130">
-                <field name="NUM">20</field>
-              </block>
-            </value>
-            <next>
-              <block type="movement_rightmotor" id="140" inline="true">
-                <value name="MOVRIGHT">
-                  <block type="math_number" id="200">
-                    <field name="NUM">200</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_leftmotor" id="158" inline="true">
-                    <value name="MOVLEFT">
-                      <block type="math_number" id="231">
-                        <field name="NUM">100</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_stop" id="250"></block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
+  <block type="controls_if" id="268" inline="false" x="0" y="-52">
+    <statement name="DO0">
+      <block type="comment_comment" id="281">
+        <field name="TEXT">88</field>
       </block>
     </statement>
-    <value name="RETURN">
-      <block type="sensor_battery" id="175"></block>
-    </value>
+    <next>
+      <block type="oled_color" id="261">
+        <field name="OBJECT">GREEN</field>
+        <next>
+          <block type="movement_stop" id="279"></block>
+        </next>
+      </block>
+    </next>
   </block>
 </xml>
